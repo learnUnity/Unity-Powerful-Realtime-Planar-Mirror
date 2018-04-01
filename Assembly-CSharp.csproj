@@ -51,16 +51,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RainGround\RainEffects.cs" />
      <Compile Include="Assets\Scripts\Mirror.cs" />
      <Compile Include="Assets\Scripts\MirrorImage.cs" />
      <Compile Include="Assets\Scripts\SmallMirrors.cs" />
+     <None Include="Assets\RainGround\CustomRT.shader" />
      <None Include="Assets\Shader\Mirror-Blur.shader" />
      <None Include="Assets\Shader\Mirror-BumpSpec.shader" />
- <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>D:/Mirror/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
- </Reference>
+     <None Include="Assets\Shader\Mirror-RainningGround.shader" />
+     <None Include="Assets\RainGround\RainParticle.shader" />
+     <None Include="Assets\RainGround\RainningGroundRT.shader" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Mirror/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>D:/Mirror/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity 2018.1.0b12/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

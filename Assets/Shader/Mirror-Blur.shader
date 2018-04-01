@@ -1,3 +1,6 @@
+/*
+ This is just an example of mirror's post processing shader.
+ */
 Shader "Hidden/Mirror-Blur"
 {
 properties{
