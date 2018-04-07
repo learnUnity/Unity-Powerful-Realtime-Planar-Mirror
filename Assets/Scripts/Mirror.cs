@@ -242,6 +242,7 @@ public class Mirror : MonoBehaviour
 
 		//mysky = go.AddComponent<Skybox> ();
 		go.transform.SetParent (normalTrans);
+		go.transform.localPosition = Vector3.zero;
 		reflectionCamera.enabled = false;
 		reflectionCamera.targetTexture = m_ReflectionTexture;
 
@@ -312,17 +313,11 @@ public class Mirror : MonoBehaviour
 
 		Vector3 localPos = normalTrans.worldToLocalMatrix.MultiplyPoint3x4
 (camT.position);
-		Matrix4x4 localToWorldMatrix = normalTrans.localToWorldMatrix;
 		if (localPos.y < 0) {
 			s_InsideRendering = false;
 			return;
-			
 		}
 
-		localPos.y = -localPos.y;
-		refT.position = localToWorldMatrix.MultiplyPoint3x4
-(localPos);
-		refT.eulerAngles = camT.eulerAngles;
 		Vector3 localEuler = refT.localEulerAngles;
 		localEuler.x *= -1;
 		refT.localEulerAngles = localEuler;
